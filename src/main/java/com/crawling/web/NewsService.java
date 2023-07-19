@@ -13,6 +13,7 @@ import jakarta.annotation.PostConstruct;
 
 @Service
 public class NewsService {
+	
     private static String News_URL = "https://www.hkbs.co.kr/news/articleList.html?sc_section_code=S1N1&view_type=sm";
 
     @PostConstruct
