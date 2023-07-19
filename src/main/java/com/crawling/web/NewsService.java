@@ -7,11 +7,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PostConstruct;
 
 @Service
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class NewsService {
 	
     private static String News_URL = "https://www.hkbs.co.kr/news/articleList.html?sc_section_code=S1N1&view_type=sm";

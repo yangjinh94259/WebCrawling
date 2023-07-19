@@ -33,7 +33,7 @@ build/
 .vscode/
 
 ### My Ignore ###
-application-dev.properties
+application.properties
 AdminLTE-3.2.0
 UI
 src/main/java/com/acadmi/home/HomeController.java
