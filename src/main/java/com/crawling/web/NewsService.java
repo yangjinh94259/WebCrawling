@@ -17,7 +17,7 @@ import jakarta.annotation.PostConstruct;
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class NewsService {
 	
-    private static String News_URL = "https://www.hkbs.co.kr/news/articleList.html?sc_section_code=S1N1&view_type=sm";
+    private static String News_URL = "https://chat.openai.com/";
 
     @PostConstruct
     public List<News> getNewsDatas() throws Exception {
